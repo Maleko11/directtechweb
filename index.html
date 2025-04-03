@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Direct Tech Solution</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="font-sans">
+  <!-- Navbar -->
+  <header id="navbar" class="fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-transparent py-5">
+    <div class="container flex items-center justify-between px-4 md:px-6 max-w-7xl mx-auto">
+      <a href="#home" class="flex items-center space-x-2">
+        <span class="text-blue-800 font-bold text-xl md:text-2xl">Direct Tech Solution</span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex items-center space-x-8">
+        <a href="#home" class="text-sm font-medium transition-colors hover:text-blue-600 text-blue-600">Home</a>
+        <a href="#services" class="text-sm font-medium transition-colors hover:text-blue-600 text-blue-600">Services</a>
+        <a href="#about" class="text-sm font-medium transition-colors hover:text-blue-600 text-blue-600">About</a>
+        <a href="#contact" class="text-sm font-medium transition-colors hover:text-blue-600 text-blue-600">Contact</a>
+        <button class="bg-indigo-600 hover:bg-indigo-600/90 text-white px-4 py-2 rounded-md transition-colors">
+          Get Started
+        </button>
+      </nav>
+
+      <!-- Mobile Menu Button -->
+      <button id="mobile-menu-button" class="md:hidden text-2xl">
+        <i data-lucide="menu" class="text-white"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="md:hidden bg-white shadow-lg hidden">
+      <div class="container py-4 flex flex-col space-y-4 px-4 md:px-6 max-w-7xl mx-auto">
+        <a href="#home" class="text-blue-600 font-medium hover:text-blue-800">Home</a>
+        <a href="#services" class="text-blue-600 font-medium hover:text-blue-800">Services</a>
+        <a href="#about" class="text-blue-600 font-medium hover:text-blue-800">About</a>
+        <a href="#contact" class="text-blue-600 font-medium hover:text-blue-800">Contact</a>
+        <button class="bg-indigo-600 hover:bg-indigo-600/90 text-white w-full py-2 rounded-md">
+          Get Started
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="relative min-h-screen flex items-center bg-cover bg-center bg-fixed pt-16" style="background-image: url('tech-background.jpg')">
+    <div class="absolute inset-0 bg-gradient-to-r from-white/70 to-blue-100/70 backdrop-blur-sm"></div>
+
+    <div class="container mx-auto relative z-10 px-4 md:px-6 max-w-7xl">
+      <div class="flex flex-col items-center text-center max-w-3xl mx-auto animate-fade-in">
+        <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-4 text-center">
+          <span class="block text-center text-blue-800 font-bold text-xl md:text-2xl mb-2">Direct Tech Solution</span>
+          IT Solutions for Your <span class="text-blue-600">Business Growth</span>
+        </h1>
+        <p class="text-xl text-gray-700 mb-8 max-w-2xl mx-auto">
+          We provide comprehensive IT services including networking, support, software and web development to power your business success.
+        </p>
+        <div class="flex flex-wrap justify-center gap-4">
+          <button class="border border-blue-800 text-blue-800 hover:bg-blue-800/10 text-lg px-8 py-6 rounded-md transition-colors">
+            Learn More <i data-lucide="chevron-right" class="ml-2 h-5 w-5 inline"></i>
+          </button>
+        </div>
+      </div>
+      
+      <!-- Stats Section -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 mt-16 bg-white/80 backdrop-blur-sm rounded-lg p-6 shadow-lg animate-slide-up" style="animation-delay: 0.3s">
+        <div class="text-center">
+          <h3 class="text-3xl md:text-4xl font-bold text-blue-600">3+</h3>
+          <p class="text-gray-700">Years Experience</p>
+        </div>
+        <div class="text-center">
+          <h3 class="text-3xl md:text-4xl font-bold text-blue-600">200+</h3>
+          <p class="text-gray-700">Projects Completed</p>
+        </div>
+        <div class="text-center">
+          <h3 class="text-3xl md:text-4xl font-bold text-blue-600">50+</h3>
+          <p class="text-gray-700">Team Members</p>
+        </div>
+        <div class="text-center">
+          <h3 class="text-3xl md:text-4xl font-bold text-blue-600">98%</h3>
+          <p class="text-gray-700">Client Satisfaction</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-12 md:py-16 lg:py-24 bg-gray-50">
+    <div class="container px-4 md:px-6 max-w-7xl mx-auto">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">
+          Our <span class="text-gradient">Services</span>
+        </h2>
+        <p class="text-gray-600">
+          We provide comprehensive IT solutions to help businesses optimize 
+          operations, enhance security, and drive growth through technology.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+          <div class="rounded-full p-4 inline-block bg-blue-100 text-blue-800 mb-4">
+            <i data-lucide="network" class="h-7 w-7"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Networking Solutions</h3>
+          <p class="text-gray-600 mb-4">We design, implement and maintain secure, high-performance network infrastructure for businesses of all sizes.</p>
+          <button class="text-blue-800 p-0 hover:text-blue-600 bg-transparent border-none cursor-pointer">
+            Learn more →
+          </button>
+        </div>
+        
+        <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+          <div class="rounded-full p-4 inline-block bg-purple-100 text-purple-700 mb-4">
+            <i data-lucide="monitor" class="h-7 w-7"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-3">IT Support</h3>
+          <p class="text-gray-600 mb-4">Our responsive IT support team provides remote and on-site assistance to keep your business running smoothly.</p>
+          <button class="text-blue-800 p-0 hover:text-blue-600 bg-transparent border-none cursor-pointer">
+            Learn more →
+          </button>
+        </div>
+        
+        <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+          <div class="rounded-full p-4 inline-block bg-green-100 text-emerald-700 mb-4">
+            <i data-lucide="code" class="h-7 w-7"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Software Development</h3>
+          <p class="text-gray-600 mb-4">Custom software solutions designed to address your specific business needs and challenges.</p>
+          <button class="text-blue-800 p-0 hover:text-blue-600 bg-transparent border-none cursor-pointer">
+            Learn more →
+          </button>
+        </div>
+        
+        <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+          <div class="rounded-full p-4 inline-block bg-orange-100 text-orange-700 mb-4">
+            <i data-lucide="globe" class="h-7 w-7"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Web Development</h3>
+          <p class="text-gray-600 mb-4">Professional web design and development services that help your business establish a strong online presence.</p>
+          <button class="text-blue-800 p-0 hover:text-blue-600 bg-transparent border-none cursor-pointer">
+            Learn more →
+          </button>
+        </div>
+      </div>
+
+      <div class="mt-16 text-center">
+        <button class="bg-blue-800 hover:bg-blue-800/90 text-white px-6 py-3 rounded-md transition-colors">
+          View All Services
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-12 md:py-16 lg:py-24">
+    <div class="container px-4 md:px-6 max-w-7xl mx-auto">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="text-3xl md:text-4xl font-bold mb-6">
+            We Are Your <span class="text-gradient">Technology Partner</span>
+          </h2>
+          <p class="text-gray-600 mb-6">
+            Direct Tech Solution is a leading IT services company, providing comprehensive solutions 
+            for businesses looking to leverage technology for growth and efficiency. Our team 
+            of experienced professionals is dedicated to delivering high-quality services 
+            tailored to your specific needs.
+          </p>
+          <p class="text-gray-600 mb-8">
+            We understand that technology is constantly evolving, which is why we stay at the 
+            forefront of innovation to ensure our clients receive cutting-edge solutions that 
+            give them a competitive advantage.
+          </p>
+
+          <div class="space-y-3 mb-8">
+            <div class="flex items-center">
+              <i data-lucide="check-circle" class="text-teal-500 mr-3 h-5 w-5 flex-shrink-0"></i>
+              <span class="text-gray-700">Over 3 years of industry experience</span>
+            </div>
+            <div class="flex items-center">
+              <i data-lucide="check-circle" class="text-teal-500 mr-3 h-5 w-5 flex-shrink-0"></i>
+              <span class="text-gray-700">Certified technical professionals</span>
+            </div>
+            <div class="flex items-center">
+              <i data-lucide="check-circle" class="text-teal-500 mr-3 h-5 w-5 flex-shrink-0"></i>
+              <span class="text-gray-700">24/7 support and monitoring</span>
+            </div>
+            <div class="flex items-center">
+              <i data-lucide="check-circle" class="text-teal-500 mr-3 h-5 w-5 flex-shrink-0"></i>
+              <span class="text-gray-700">Tailored solutions for your business needs</span>
+            </div>
+            <div class="flex items-center">
+              <i data-lucide="check-circle" class="text-teal-500 mr-3 h-5 w-5 flex-shrink-0"></i>
+              <span class="text-gray-700">Transparent pricing with no hidden fees</span>
+            </div>
+          </div>
+
+          <button class="bg-blue-800 hover:bg-blue-800/90 text-white px-6 py-3 rounded-md transition-colors">
+            More About Us
+          </button>
+        </div>
+
+        <div class="grid grid-cols-2 gap-4">
+          <div class="space-y-4">
+            <div class="bg-blue-50 p-6 rounded-lg">
+              <div class="text-4xl font-bold text-blue-800 mb-2">3+</div>
+              <p class="text-gray-700">Years of Experience</p>
+            </div>
+            <div class="bg-purple-50 p-6 rounded-lg">
+              <div class="text-4xl font-bold text-indigo-600 mb-2">24/7</div>
+              <p class="text-gray-700">Customer Support</p>
+            </div>
+          </div>
+          <div class="space-y-4 mt-8">
+            <div class="bg-green-50 p-6 rounded-lg">
+              <div class="text-4xl font-bold text-emerald-600 mb-2">500+</div>
+              <p class="text-gray-700">Happy Clients</p>
+            </div>
+            <div class="bg-orange-50 p-6 rounded-lg">
+              <div class="text-4xl font-bold text-orange-600 mb-2">100%</div>
+              <p class="text-gray-700">Client Satisfaction</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-12 md:py-16 lg:py-24 bg-gray-50">
+    <div class="container px-4 md:px-6 max-w-7xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">Contact Us</h2>
+      <div class="max-w-3xl mx-auto bg-white rounded-lg shadow-md p-8">
+        <form id="contact-form">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <label for="name" class="block text-gray-700 mb-2">Name</label>
+              <input type="text" id="name" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+            <div>
+              <label for="email" class="block text-gray-700 mb-2">Email</label>
+              <input type="email" id="email" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+            <div class="md:col-span-2">
+              <label for="subject" class="block text-gray-700 mb-2">Subject</label>
+              <input type="text" id="subject" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+            <div class="md:col-span-2">
+              <label for="message" class="block text-gray-700 mb-2">Message</label>
+              <textarea id="message" rows="4" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+            </div>
+          </div>
+          <button type="submit" class="mt-6 bg-blue-800 hover:bg-blue-800/90 text-white px-6 py-3 rounded-md transition-colors w-full md:w-auto">
+            Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white">
+    <div class="container py-12 md:py-16 lg:py-24 px-4 md:px-6 max-w-7xl mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Company Info -->
+        <div>
+          <h3 class="text-xl font-bold mb-4">Direct Tech Solution</h3>
+          <p class="text-gray-300 mb-4">
+            Providing innovative IT solutions and services to businesses of all sizes.
+          </p>
+          <div class="flex space-x-4">
+            <a href="#" aria-label="Facebook" class="text-gray-300 hover:text-white">
+              <i data-lucide="facebook" class="h-6 w-6"></i>
+            </a>
+            <a href="#" aria-label="Twitter" class="text-gray-300 hover:text-white">
+              <i data-lucide="twitter" class="h-6 w-6"></i>
+            </a>
+            <a href="#" aria-label="LinkedIn" class="text-gray-300 hover:text-white">
+              <i data-lucide="linkedin" class="h-6 w-6"></i>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Quick Links -->
+        <div>
+          <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+          <ul class="space-y-2">
+            <li><a href="#services" class="text-gray-300 hover:text-white transition">Services</a></li>
+            <li><a href="#about" class="text-gray-300 hover:text-white transition">About Us</a></li>
+            <li><a href="#contact" class="text-gray-300 hover:text-white transition">Contact</a></li>
+            <li><a href="#" class="text-gray-300 hover:text-white transition">Privacy Policy</a></li>
+            <li><a href="#" class="text-gray-300 hover:text-white transition">Terms of Service</a></li>
+          </ul>
+        </div>
+        
+        <!-- Services -->
+        <div>
+          <h3 class="text-xl font-bold mb-4">Our Services</h3>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-gray-300 hover:text-white transition">Networking Solutions</a></li>
+            <li><a href="#" class="text-gray-300 hover:text-white transition">IT Support</a></li>
+            <li><a href="#" class="text-gray-300 hover:text-white transition">Software Development</a></li>
+            <li><a href="#" class="text-gray-300 hover:text-white transition">Web Development</a></li>
+            <li><a href="#" class="text-gray-300 hover:text-white transition">Cloud Services</a></li>
+          </ul>
+        </div>
+        
+        <!-- Contact Info -->
+        <div>
+          <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+          <ul class="space-y-3">
+            <li class="flex items-start">
+              <i data-lucide="map-pin" class="mr-2 h-5 w-5 text-blue-400 flex-shrink-0"></i>
+              <span class="text-gray-300">123 Business Avenue, Tech City, TC 54321</span>
+            </li>
+            <li class="flex items-center">
+              <i data-lucide="phone" class="mr-2 h-5 w-5 text-blue-400 flex-shrink-0"></i>
+              <span class="text-gray-300">(555) 123-4567</span>
+            </li>
+            <li class="flex items-center">
+              <i data-lucide="mail" class="mr-2 h-5 w-5 text-blue-400 flex-shrink-0"></i>
+              <span class="text-gray-300">info@directtechsolution.com</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="border-t border-gray-700 mt-10 pt-6 text-center text-gray-400">
+        <p>&copy; <span id="current-year"></span> Direct Tech Solution. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
